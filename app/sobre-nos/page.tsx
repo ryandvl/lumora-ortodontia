@@ -3,20 +3,39 @@ import Image from "next/image";
 import { Header } from "@/components/header";
 
 import LumoraLogo from "@/public/lumora-logo.jpeg";
+import Organograma from "@/public/organograma.jpeg";
 
 export default function AboutUs() {
   return (
     <div className="relative rounded-4xl bg-slate-50 w-full h-fit p-4 px-8 pb-90 flex flex-col gap-40">
       <Header page="sobre-nos" />
 
+      <div className="flex items-center justify-center flex-col gap-4 bg-blue-50 p-6 rounded-full">
+        <span className="text-sky-600 text-5xl font-extrabold animate-fade">
+          SOBRE NÓS
+        </span>
+
+        <span className="text-sky-800 text-xl text-center max-w-150 animate-fade">
+          A Lumora é uma clínica odontológica focada em ortodontia.
+          <br />
+          Com uma tecnologia de ponta, nosso propósito é iluminar sorrisos por
+          meio de tratamentos personalizados, aliando saúde bucal, estética e
+          bem estar.
+          <br />
+          <br />
+          Nos atentando à necessidade de cada paciente, transformamos sua
+          jornada ortodontica em uma experiência única e confiável.
+        </span>
+      </div>
+
       <div className="flex flex-col justify-between gap-8">
-        <span className="text-blue-700 font-extrabold text-5xl">
+        <span className="text-blue-700 font-extrabold text-5xl animate-fade">
           Fundação da Empresa
         </span>
 
         <div className="flex items-center gap-20">
           <div className="bg-zinc-100 p-4 rounded-2xl w-fit max-w-1/3 min-h-80 flex flex-col gap-4 shadow animate-fade2">
-            <span className="text-blue-500 font-bold text-3xl">
+            <span className="text-blue-500 font-bold text-3xl animate-fade">
               Nome e identidade visual
             </span>
             <span className="text-zinc-900">
@@ -60,7 +79,7 @@ export default function AboutUs() {
       </div>
 
       <div className="flex flex-col justify-between gap-8">
-        <span className="text-blue-700 font-extrabold text-5xl">
+        <span className="text-blue-700 font-extrabold text-5xl animate-fade">
           Missão, visão e valores
         </span>
 
@@ -96,7 +115,7 @@ export default function AboutUs() {
       </div>
 
       <div className="flex flex-col justify-between gap-8">
-        <span className="text-blue-700 font-extrabold text-5xl">
+        <span className="text-blue-700 font-extrabold text-5xl animate-fade">
           Proposta de valor e Público-alvo
         </span>
 
@@ -126,6 +145,19 @@ export default function AboutUs() {
             </span>
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-col justify-between gap-8">
+        <span className="text-blue-700 font-extrabold text-5xl animate-fade">
+          Organograma
+        </span>
+
+        <Image
+          src={Organograma}
+          alt="organograma"
+          width={Organograma.width / 2}
+          height={Organograma.height / 2}
+        />
       </div>
     </div>
   );

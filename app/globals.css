@@ -39,3 +39,24 @@
     }
   }
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Background */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Bar */
+::-webkit-scrollbar-thumb {
+  background-color: #2563eb;
+  border-radius: 8px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d4ed8;
+}
