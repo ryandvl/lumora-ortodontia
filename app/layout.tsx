@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Bebas_Neue, Inter } from "next/font/google";
 
 import "./globals.css";
 
@@ -8,8 +8,9 @@ export const interFont = Inter({
   subsets: ["latin"],
 });
 
-export const robotoFont = Roboto({
-  variable: "--font-roboto",
+export const bebasNeueFont = Bebas_Neue({
+  weight: "400",
+  variable: "--font-bebasneue",
   subsets: ["latin"],
 });
 

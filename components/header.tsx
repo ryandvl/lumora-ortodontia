@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { robotoFont } from "@/app/layout";
+import { bebasNeueFont } from "@/app/layout";
 import Logo from "@/public/logo.png";
 import { HomeIcon, InfoIcon, PhoneCallIcon, UserStarIcon } from "lucide-react";
 
@@ -16,7 +16,7 @@ export function Header() {
         />
 
         <span
-          className={`text-sky-700 font-bold text-3xl ${robotoFont.variable}`}
+          className={`text-sky-700 font-bold text-3xl ${bebasNeueFont.variable} inline-block animate-fade2`}
         >
           Lumora Ortodontia
         </span>
