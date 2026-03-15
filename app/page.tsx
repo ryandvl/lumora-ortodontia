@@ -14,7 +14,7 @@ import Photo from "@/public/apresentação.png";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative rounded-4xl bg-slate-50 overflow-hidden w-full h-full p-4 px-8 flex flex-col gap-40">
       <div className="absolute -top-120 -left-130 w-400 h-250 bg-blue-100 rounded-full z-0"></div>
       <div className="absolute -bottom-130 -right-130 w-250 h-250 bg-blue-400 rounded-full z-0"></div>
 
@@ -114,6 +114,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }

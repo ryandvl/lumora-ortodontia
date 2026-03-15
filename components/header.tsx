@@ -61,10 +61,10 @@ export function Header({ page }: IHeaderProps) {
         {page != "contato" && (
           <Link
             href={"/contato"}
-            className="rounded-2xl bg-blue-400 p-4 px-6 flex items-center gap-2 cursor-pointer"
+            className="rounded-2xl bg-zinc-900 p-4 px-6 flex items-center gap-2 cursor-pointer"
           >
-            <PhoneCallIcon className="text-blue-200" size={22} />
-            <span className="text-blue-50 font-semibold">Contato</span>
+            <span className="text-zinc-50 font-semibold">Contato</span>
+            <PhoneCallIcon className="text-zinc-200" size={22} />
           </Link>
         )}
       </div>
