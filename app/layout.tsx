@@ -17,6 +17,12 @@ export const bebasNeueFont = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Lumora Ortodontia",
   description: "Site oficial da Lumora Ortodontia",
+  openGraph: {
+    title: "Lumora Ortodontia",
+    description: "Site oficial da Lumora Ortodontia",
+    url: "https://lumora-ortodontia.vercel.app/",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
