@@ -1,65 +1,73 @@
 import Image from "next/image";
 
+import { Header } from "@/components/header";
+import { fadeAnimation } from "@/utils/animations";
+
+import Photo from "@/public/apresentação.png";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div>
+      <div className="relative rounded-4xl bg-slate-50 overflow-hidden w-full h-200 p-4 px-8 flex flex-col gap-40">
+        <div className="absolute -top-120 -left-130 w-400 h-250 bg-blue-100 rounded-full z-0"></div>
+        <div className="absolute -bottom-130 -right-130 w-250 h-250 bg-blue-400 rounded-full z-0"></div>
+
+        <Header />
+
+        <div className="relative z-10 px-12">
+          <span className="text-indigo-500 font-extrabold text-6xl">
+            {fadeAnimation("Rapidez e precisão em")}
+          </span>
+          <br />
+          <span className="text-indigo-500 font-extrabold text-6xl">
+            {fadeAnimation("cada tratamento", 4)}
+          </span>
+
+          <div className="absolute right-50 -top-20">
+            <svg
+              className="absolute -left-10 -bottom-10 size-16 select-none opacity-20"
+              width="6"
+              height="6"
+              viewBox="0 0 6 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <path
+                d="M5 5H3C2.46957 5 1.96086 4.78929 1.58579 4.41421C1.21071 4.03914 1 3.53043 1 3V1"
+                stroke="blue"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+
+            <svg
+              className="absolute -right-10 -top-10 size-16 select-none opacity-20"
+              width="6"
+              height="6"
+              viewBox="0 0 6 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+              <path
+                d="M1 1H3C3.53043 1 4.03914 1.21071 4.41421 1.58579C4.78929 1.96086 5 2.46957 5 3V5"
+                stroke="blue"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src={Photo}
+              alt="Criança e adulto sorrindo juntos representando a felicidade da Lumora Ortodontia"
+              width={Photo.width / 3}
+              height={Photo.height / 3}
+              className="rounded-4xl shadow-2xl opacity-90"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
