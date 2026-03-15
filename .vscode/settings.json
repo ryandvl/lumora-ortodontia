@@ -1,0 +1,8 @@
+{
+  "discord.removeDetails": true,
+  "discord.removeRemoteRepository": true,
+
+  "files.exclude": {
+    "node_modules": true
+  }
+}
