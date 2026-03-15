@@ -29,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${interFont.variable} antialiased w-screen h-screen p-6`}
       >
-        {children}
+        <div className="relative rounded-4xl bg-slate-50 overflow-hidden w-full h-full p-4 px-8 flex flex-col gap-40">
+          {children}
+        </div>
       </body>
     </html>
   );
