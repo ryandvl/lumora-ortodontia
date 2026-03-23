@@ -110,7 +110,7 @@ export default function Home() {
             alt="Criança e adulto sorrindo juntos representando a felicidade da Lumora Ortodontia"
             width={Photo.width / 3}
             height={Photo.height / 3}
-            className="rounded-4xl shadow-2xl animate-fade"
+            className="rounded-4xl shadow-2xl animate-fade bg-zinc-200"
           />
         </div>
       </div>
